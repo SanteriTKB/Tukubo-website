@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuKuBo Trasteros Urbanos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600; /* Orange color from logo */
+            color: white;
+            padding: 0.5em 0; /* Reduced padding for smaller stripe */
+            text-align: center; /* Center align header content */
+        }
+        header img.logo {
+            max-width: 150px; /* Adjusted logo size */
+            margin-bottom: 5px; /* Space below logo */
+        }
+        /* Removed h1 style as it's removed from HTML */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0; /* Space above nav */
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px; /* Spacing between nav items */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: #ff6600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #inicio p {
+            text-align: center; /* Center welcome text */
+            font-weight: bold; /* Bold welcome text */
+            font-size: 1.2em; /* Larger welcome text */
+        }
+        .service-item, .feature-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .service-item img, .feature-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .service-item h3, .feature-item h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+            gap: 15px;
+        }
+        #contacto {
+            text-align: center; /* Center contact section text */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 30px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 992px) { /* Medium devices */
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Stack header items vertically */
+                padding-left: 0; /* Reset padding */
+                text-align: center; /* Center align stacked items */
+            }
+            header img.logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            /* Removed h1 responsive style */
+            nav {
+                margin-left: 0; /* Reset margin */
+                padding-right: 0; /* Reset padding */
+                width: 100%;
+            }
+            nav ul {
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .container {
+                width: 95%;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 1 item per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="TuKuBo Logo" class="logo">
+        <!-- Removed H1 title -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="inicio" class="section">
+            <h2>Bienvenido a TuKuBo</h2>
+            <p>Tu solución de almacenamiento segura y accesible en el corazón de la ciudad, en el centro de Llefia, Badalona. Ofrecemos trasteros de alquiler de diversos tamaños para particulares y autónomos, con la máxima seguridad y comodidad.</p>
+            <img src="Exterior.png" alt="Exterior de TuKuBo" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;">
+        </section>
+
+        <section id="servicios" class="section">
+            <h2>Nuestros Servicios</h2>
+            <div class="gallery-grid">
+                <div class="service-item">
+                    <img src="Trasteros de todos los tamaños.png" alt="Trasteros de todos los tamaños" style="width:100%;">
+                    <h3>Trasteros de Todos los Tamaños</h3>
+                    <p>Desde taquillas a 5m2. Nos adaptamos a tus necesidades.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Maxima Seguridad.png" alt="Máxima Seguridad" style="width:100%;">
+                    <h3>Máxima Seguridad</h3>
+                    <p>Entrada con huella dactilar.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Zona de carga y descarga.png" alt="Zona de Carga y Descarga" style="width:100%;">
+                    <h3>Zona de Carga y Descarga</h3>
+                    <p>Olvídate de buscar aparcamiento.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Material de embalaje.png" alt="Material de Embalaje" style="width:100%;">
+                    <h3>Material de Embalaje</h3>
+                    <p>Todas las cosas que puedas necesitar lo tenemos.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Abierto 14h todo el año.png" alt="Abierto 14h todo el año" style="width:100%;">
+                    <h3>Abierto 14h Todo el Año</h3>
+                    <p>Siempre contigo.</p>
+                </div>
+                <div class="service-item">
+                    <img src="Cerca de tu casa.png" alt="Cerca de tu casa" style="width:100%;">
+                    <h3>Cerca de Tu Casa</h3>
+                    <p>La extensión de su hogar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="section">
+            <h2>Nuestra Ubicación</h2>
+            <p>Nos encontramos en: Carrer d'Europa, 43, 08913 Badalona, Barcelona, Spain</p>
+            <p>Puedes encontrarnos fácilmente usando Google Maps:</p>
+            <div style="width:100%; max-width:600px; margin:20px auto;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.569586826797!2d2.225970915419824!3d41.42660197926079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bbff587d6c3b%3A0x16e7911a48087583!2sCarrer%20d'Europa%2C%2043%2C%2008913%20Badalona%2C%20Barcelona%2C%20Spain!5e0!3m2!1sen!2sus!4v1620048988736!5m2!1sen!2sus"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <!-- Phone number removed from here -->
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta o para alquilar tu trastero, no dudes en contactarnos:</p>
+            <p><strong>Teléfono:</strong> <a href="https://wa.me/34665332255" target="_blank" style="color: #ff6600;">665 33 22 55 (WhatsApp)</a></p>
+            <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@tukubo.es" target="_blank" style="color: #ff6600;">info@tukubo.es</a></p>
+            <!-- Removed office visit sentence -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TuKuBo Trasteros Urbanos. Todos los derechos reservados.</p>
+        <p>Diseñado con cariño por Manus IA</p>
+    </footer>
+</body>
+</html>
+
